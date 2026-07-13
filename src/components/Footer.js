@@ -9,9 +9,9 @@ export default function Footer() {
           <h3 className="display">Contact</h3>
           <p>Open to full-stack and smart contract developer roles.</p>
           <div className="contactLinks">
-            <a href="mailto:you@example.com">Email</a>
-            <a href="#">GitHub</a>
-            <a href="#">LinkedIn</a>
+            <a href="allamsettydeepu33@gmail.com">Email</a>
+            <a href="https://github.com/deepuallamsetty">GitHub</a>
+            <a href="https://www.linkedin.com/in/deepika-allamsetty-2b007521b/">LinkedIn</a>
           </div>
         </div>
       </Reveal>
