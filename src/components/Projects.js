@@ -11,7 +11,11 @@ const projects = [
     stack: ["Solidity", "Foundry", "NestJS", "TypeORM", "React"],
     detail:
       "TokenFactory contract with a Foundry test suite at full coverage. A NestJS indexer listens to on-chain events over an Alchemy websocket and writes them to PostgreSQL, so the frontend never queries the chain directly for history.",
-    links: { live: "#", contract: "#", repo: "#" },
+    links: {
+      live: "https://token-launchpad-frontend-two.vercel.app/dashboard",
+      contract: "https://sepolia.etherscan.io/address/0xcb1452d0a8584eb661067853ED1A42926862779d",
+      repo: "https://github.com/deepuallamsetty/token-launchpad-frontend",
+    },
   },
   {
     name: "DeFi Staking Protocol",
@@ -21,7 +25,11 @@ const projects = [
     stack: ["Solidity", "Foundry", "React", "Ethers.js"],
     detail:
       "Reward-per-token-stored staking contract, the same accounting pattern used by production protocols like Synthetix. Rewards accrue continuously without looping over stakers on-chain.",
-    links: { live: "#", contract: "#", repo: "#" },
+    links: {
+      live: null,
+      contract: "https://sepolia.etherscan.io/address/0xD0987879F3d5220a2509b798fAD8EE888Ad5C674",
+      repo: "https://github.com/deepuallamsetty/defi-staking-dapp",
+    },
   },
 ];
 
@@ -61,9 +69,9 @@ export default function Projects() {
               ))}
             </div>
             <div className="projectLinks">
-              <a href={p.links.live}>Live app →</a>
-              <a href={p.links.contract}>Contract ↗</a>
-              <a href={p.links.repo}>Repo ↗</a>
+              {p.links.live && <a href={p.links.live} target="_blank" rel="noopener noreferrer">Live app →</a>}
+              <a href={p.links.contract} target="_blank" rel="noopener noreferrer">Contract ↗</a>
+              <a href={p.links.repo} target="_blank" rel="noopener noreferrer">Repo ↗</a>
             </div>
           </div>
         </Reveal>

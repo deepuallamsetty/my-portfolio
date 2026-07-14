@@ -459,6 +459,23 @@ section {
   max-width: 58ch;
 }
 
+.expBullets {
+  margin-top: 10px;
+  padding-left: 18px;
+  max-width: 60ch;
+}
+
+.expBullets li {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  line-height: 1.55;
+  margin-bottom: 6px;
+}
+
+.expBullets li::marker {
+  color: var(--gold);
+}
+
 /* Footer / signature */
 footer {
   padding: 64px 0 80px;

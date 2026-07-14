@@ -3,6 +3,7 @@ import Reveal from "./Reveal";
 
 const skills = {
   core: [
+    { name: "Node.js", note: "runtime" },
     { name: "NestJS", note: "backend framework" },
     { name: "TypeORM", note: "ORM / PostgreSQL" },
     { name: "PostgreSQL", note: "database" },
@@ -14,6 +15,7 @@ const skills = {
     { name: "Foundry", note: "testing / fuzzing" },
     { name: "ERC-20 / 721 / 1155", note: "token standards" },
     { name: "Ethers.js", note: "chain integration" },
+    { name: "Wagmi", note: "React hooks for Ethereum" },
     { name: "Ethernaut", note: "20 / 20 completed" },
   ],
 };
